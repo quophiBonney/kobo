@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>BoHub - Land Your Dream Job</title>
+    <!--FontAwesome Link-->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <!--Boostrap Link-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <!--AOS Scroll CSS Link-->
+    <link rel="stylesheet" href="dist/aos.css" />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body>
+    <div class="container-fluid preloader-container">
+      <div class="row justify-content-center preloader">
+        <div class="col-12">
+          <img
+            src="assets/images/loader.svg"
+            alt="loader svg"
+            class="img-fluid"
+            width="100"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      <nav
+        class="navbar navbar-expand-lg navbar-light text-light fixed-top shadow"
+        id="navbar"
+      >
+        <div class="container" style="margin-top: 0">
+          <a class="navbar-brand text-light" href="index.html">BoHub</a>
+          <span
+            type="button"
+            class="navbar-toggler bg-light"
+            data-bs-target="#navbarSupportedContent"
+            data-bs-toggle="collapse"
+            aria-label="Toggle Navigation"
+            aria-expanded="false"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </span>
+          <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light active"
+                  href="index.html"
+                  target="_self"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="faq.html" target="_blank"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="about.html" target="_blank"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto" id="modal-btns">
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-toggle="modal"
+                  data-bs-target="#registration_form"
+                >
+                  Register
+                </button>
+              </li>
+              &nbsp;
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-outline-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#job_posting_form"
+                >
+                  Post A Job
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid" id="home-banner">
+        <div class="row">
+          <div
+            class="col-sm-12 col-md-12 col-lg-12 mt-5 text-center text-light"
+          >
+            <h3 class="mt-2">Find Job, Hire Experts</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
+              velit, dolorem saepe dolor minima itaque beatae placeat aspernatur
+              error, tempora delectus impedit rem nemo suscipit fugiat amet quas
+              voluptas soluta corrupti deserunt odit illum. Repellat, optio
+              nesciunt ducimus voluptatibus iusto voluptatem!
+            </p>
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#registration_form"
+            >
+              Register
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-light"
+              data-bs-toggle="modal"
+              data-bs-target="#job_posting_form"
+            >
+              Post A Job
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--- Registration Form Starts Here-->
+      <div
+        class="modal fade"
+        id="registration_form"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title" id="exampleModalToggleLabel">
+                <h1 class="fs-5">Registration Form</h1>
+                <p>Fill all the fields to complete your registration</p>
+              </div>
+              <span
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></span>
+            </div>
+            <div class="modal-body">
+              <form medthod="" action="" id="registrationForm">
+                <div class="row">
+                  <div class="col-6 mt-3">
+                    <label for="name"
+                      >Full Name<sup class="text-danger">*</sup></label
+                    >
+                    <input
+                      type="type"
+                      class="form-control"
+                      placeholder="Solomon Bonney"
+                      name="full_name"
+                      id="full_name"
+                    />
+                  </div>
+                  <div class="col-6 mt-3">
+                    <label for="name"
+                      >Email<sup class="text-danger">*</sup></label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="bos@gmail.com"
+                      name="email"
+                      id="email"
+                    />
+                  </div>
+                  <div class="col-6 mt-3">
+                    <label for="profession"
+                      >Profession<sup class="text-danger">*</sup></label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="software engineer"
+                      name="profession"
+                      id="profession"
+                    />
+                  </div>
+                  <div class="col-6 mt-3">
+                    <label for="job category"
+                      >Continent<sup class="text-danger">*</sup></label
+                    >
+                    <select
+                      name=""
+                      id=""
+                      class="w-100 bg-white border-1"
+                      style="
+                        border-radius: 5px;
+                        height: 38px;
+                        border: 2px solid lavender;
+                      "
+                    >
+                      <option value="">--- Continent ---</option>
+                      <option value="">Africa</option>
+                      <option value="1">Asia</option>
+                      <option value="">Europe</option>
+                      <option value="1">North America</option>
+                    </select>
+                  </div>
+                  <div class="col-6 mt-3">
+                    <label for="name"
+                      >Profile Picture<sup class="text-danger">*</sup></label
+                    >
+                    <input
+                      type="file"
+                      class="form-control"
+                      name="profile_picture"
+                      id="profile_picture"
+                    />
+                  </div>
+                  <div class="col-12 mt-5 mb-5">
+                    <input
+                      type="submit"
+                      class="btn btn-md btn-primary w-50"
+                      value="Register"
+                      name="register"
+                      id="register"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="job_posting_form"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                Modal 1
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form medthod="" action="" id="jobForm">
+                <div class="row">
+                  <div class="col-6 mt-3">
+                    <input
+                      type="type"
+                      class="form-control"
+                      placeholder="Company Name"
+                      name="company_name"
+                      id="company_name"
+                    />
+                  </div>
+                  <div class="col-6 mt-3">
+                    <input
+                      type="type"
+                      class="form-control"
+                      placeholder="Job Title"
+                      name="job_title"
+                      id="job_title"
+                    />
+                  </div>
+                  <div class="col-6 mt-3">
+                    <select
+                      name=""
+                      id=""
+                      class="w-100 bg-white border-1"
+                      style="
+                        border-radius: 5px;
+                        height: 38px;
+                        border: 2px solid lavender;
+                      "
+                    >
+                      <option value="" disabled selected>Job Category</option>
+                      <option value="">Software Engineering</option>
+                      <option value="1">Content Writing</option>
+                      <option value="">Hardware Engineering</option>
+                      <option value="1">Secretariat</option>
+                    </select>
+                  </div>
+                  <div class="col-6 mt-3">
+                    <input
+                      type="type"
+                      class="form-control"
+                      name="job_description"
+                      id="job_description"
+                      placeholder="Job Description"
+                    />
+                  </div>
+                  <div class="col-6 mt-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Company Email"
+                      name="company_email"
+                      id="company_email"
+                    />
+                  </div>
+                  <div class="col-6 mt-3">
+                    <input
+                      type="file"
+                      class="form-control"
+                      name="company_logo"
+                      id="company_logo"
+                    />
+                  </div>
+                  <div class="col-6 mt-3">
+                    <select
+                      name="job_type"
+                      id="job_type"
+                      class="w-100 bg-white border-1"
+                      style="
+                        border-radius: 5px;
+                        height: 38px;
+                        border: 2px solid lavender;
+                      "
+                    >
+                      <option value="0" disabled>Job Type</option>
+                      <option value="1">Remote</option>
+                      <option value="">Hybrid</option>
+                      <option value="1">On-Site</option>
+                    </select>
+                  </div>
+                  <div class="col-6 mt-3">
+                    <input
+                      type="file"
+                      class="form-control"
+                      name="job_location"
+                      id="job_location"
+                    />
+                  </div>
+                  <div class="col-12 mt-5 mb-5">
+                    <input
+                      type="submit"
+                      class="btn btn-md btn-primary w-50"
+                      value="Post Job"
+                      name="post_job"
+                      id="post_job"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Additional JavaScript Links-->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

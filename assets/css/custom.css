@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    height: 100vh;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Archivo Black', sans-serif;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+}
+.preloader-container {
+    background: #fff;
+}
+.preloader {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#navbar {
+    background: rgb(35, 113, 176)
+}
+#home-banner {
+    margin-top: 55px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/appbg.png");
+    height: 300px;
+    background-position: center center;
+    background-size: cover;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+@media screen and (max-width: 768px) {
+    #home-banner {
+        height: 400px;
+    }
+    #modal-btns {
+        display: none;
+    }
+}
